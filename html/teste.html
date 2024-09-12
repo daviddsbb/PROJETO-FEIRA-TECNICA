@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Barra de Pesquisa com Lupa</title>
+  <style>
+    .search-container {
+      display: flex;
+      align-items: center;
+      border: 2px solid #ccc; 
+      border-radius: 25px;
+      padding: 5px 10px;
+      width: 300px;
+    }
+
+    .search-container input[type="text"] {
+      border: none;
+      outline: none;
+      width: 100%;
+      font-size: 16px;
+    }
+
+    .search-container button {
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      padding: 0;
+    }
+
+    .search-container img {
+      width: 20px;
+      height: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="search-container">
+  <input type="text" placeholder="Pesquisar na IMDb">
+  <button type="submit">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/55/Magnifying_glass_icon.svg" alt="Lupa">
+  </button>
+</div>
+
+</body>
+</html>
