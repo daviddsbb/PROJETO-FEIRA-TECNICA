@@ -2,6 +2,7 @@
     include('conexao.php');
 
     if(isset($_POST['nome']) || isset($_POST['email']) || isset($_POST['username']) || isset($_POST['password'])){
+        $error = [];
         if(strlen($_POST['nome'])==0){
             echo("Preencha o nome");
         }else if (strlen($_POST['email'])==0){
@@ -10,7 +11,10 @@
             echo("Preencha o usuario");
         }else if (strlen($_POST['password'])==0){
             echo("Preencha a senha");
-        }else{
+        }
+        }else if (strlen($_POST['password'] > 12)){
+            $errors[] ="Senha maior que 12 caracteres!";
+        else{
 
             $nome = $_POST['nome'];
             $email = $_POST['email'];
