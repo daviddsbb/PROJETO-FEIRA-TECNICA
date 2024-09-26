@@ -8,3 +8,6 @@
 ## CSS 3
 ## mySQL
 ## JavaScript
+## Colaborativo com Cauã Henrique
+## Supervisores Felipe Garcia e Alexandre Franquitto
+## Desenvolvido por PInova.
