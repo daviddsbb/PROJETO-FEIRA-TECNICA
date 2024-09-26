@@ -26,9 +26,6 @@
             echo "Erro: " . $sql . "<br>" . $conn->error;
         }
  
-
-
-
         }
 
 
@@ -72,6 +69,14 @@
             <div class="input-group">
                 <label for="password">Senha</label>
                 <input type="password" id="password" name="password" required>
+          <div class="req">
+                    <ul>
+                        <li>Deve incluir entre <strong>8 e 12 caracteres.</strong></li>
+                        <li>Inclui ao menos <strong>um letra maiúscula.</strong></li>
+                        <li>Incluir ao menos <strong>um número.</strong></li>
+                        <li>Não pode conter espaços.</li>
+                    </ul>
+                </div>
             </div>
             <button type="submit">Cadastrar</button>
         </form>
