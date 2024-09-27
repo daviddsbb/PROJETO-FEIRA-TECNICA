@@ -30,10 +30,20 @@
               <img src="https://upload.wikimedia.org/wikipedia/commons/5/55/Magnifying_glass_icon.svg" alt="Lupa">
             </button>
           </div>
-        <div class="right-menu">
-            <span>Lista de favoritos</span>
-            <a style="text-decoration: none; color: aliceblue;" href="desconectar.php"><span>sair</span></a> <!-- por algum caralhos de motivo quando eu coloco text decoration none no css, buga a barra de pesquisa, nao julguem -->
-        </div>
+        <?php
+
+            if(!isset($_SESSION)){
+             session_start();
+            }
+            if ($_SESSION == TRUE){
+                
+             echo ('<a style="text-decoration: none; color: aliceblue;" href="desconectar.php"><span>Sair</span></a>');
+         
+            }else{
+                echo('<a style="text-decoration: none; color: aliceblue;" href="login.php">Login</a>');
+            }
+        ?>
+           
     </nav>
     <hr class="espacamento">
     <div class="top-ten-section">
