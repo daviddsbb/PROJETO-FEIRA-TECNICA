@@ -80,6 +80,13 @@
                         <li>Incluir ao menos <strong>um número.</strong></li>
                         <li>Não pode conter espaços.</li>
                     </ul>
+                 <?php if (!empty($errors)) { 
+                    foreach ($errors as $error) {
+                        if (strpos($error, "Senha") !== false) {
+                            echo "<div style='color: rgb(208, 51, 51);'>$error</div>"; // Exibir a mensagem de erro em vermelho
+                        }
+                    }
+                } ?>
                 </div>
             </div>
             <button type="submit">Cadastrar</button>
