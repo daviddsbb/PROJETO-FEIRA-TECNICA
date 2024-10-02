@@ -5,7 +5,7 @@
 
 ## PHP
 ## HTML 5
-## CSS 3
+## CSS 3 e SCSS
 ## mySQL
 ## JavaScript
 ## Colaborativo com Cauã Henrique
